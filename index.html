@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List - Приложение для управления задачами</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="todo-app">
+            <header class="header">
+                <h1>📝 Мой список дел</h1>
+                <p class="subtitle">Организуй свои задачи эффективно</p>
+            </header>
+
+            <div class="input-section">
+                <input 
+                    type="text" 
+                    id="todoInput" 
+                    class="todo-input" 
+                    placeholder="Добавьте новую задачу..."
+                    autocomplete="off"
+                >
+                <button id="addBtn" class="add-btn">Добавить</button>
+            </div>
+
+            <div class="filter-section">
+                <button class="filter-btn active" data-filter="all">Все</button>
+                <button class="filter-btn" data-filter="active">Активные</button>
+                <button class="filter-btn" data-filter="completed">Завершённые</button>
+            </div>
+
+            <div class="stats">
+                <span>Всего задач: <strong id="totalCount">0</strong></span>
+                <span>Завершено: <strong id="completedCount">0</strong></span>
+                <span>Осталось: <strong id="remainingCount">0</strong></span>
+            </div>
+
+            <ul id="todoList" class="todo-list">
+                <!-- Задачи будут добавляться здесь -->
+            </ul>
+
+            <div class="empty-state" id="emptyState">
+                <p>📭 Нет задач</p>
+                <p class="empty-text">Добавьте первую задачу, чтобы начать!</p>
+            </div>
+
+            <div class="actions">
+                <button id="clearBtn" class="clear-btn">Очистить завершённые</button>
+                <button id="deleteAllBtn" class="delete-all-btn">Удалить все</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
