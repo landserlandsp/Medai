@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MedAI - Профессиональное приложение для управления медицинскими задачами и расписанием">
+    <meta name="theme-color" content="#2563eb">
+    <title>MedAI - Медицинское управление задачами</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="todo-app">
+            <!-- Header Section -->
+            <header class="header">
+                <h1>🏥 MedAI</h1>
+                <p class="subtitle">Управление медицинскими задачам�� и приёмами</p>
+            </header>
+
+            <!-- Input Section -->
+            <div class="input-section">
+                <input 
+                    type="text" 
+                    id="todoInput" 
+                    class="todo-input" 
+                    placeholder="Добавьте новую задачу (макс. 200 символов)..."
+                    autocomplete="off"
+                    maxlength="200"
+                    aria-label="Поле ввода новой задачи"
+                    required
+                >
+                <button id="addBtn" class="add-btn" aria-label="Добавить задачу" title="Или нажмите Enter">
+                    ➕ Добавить
+                </button>
+            </div>
+
+            <!-- Filter Section -->
+            <div class="filter-section">
+                <button class="filter-btn active" data-filter="all" aria-pressed="true">
+                    📋 Все
+                </button>
+                <button class="filter-btn" data-filter="active" aria-pressed="false">
+                    ⚙️ Активные
+                </button>
+                <button class="filter-btn" data-filter="completed" aria-pressed="false">
+                    ✅ Завершённые
+                </button>
+            </div>
+
+            <!-- Statistics Section -->
+            <div class="stats">
+                <span class="stat-item">
+                    📊 Всего: <strong id="totalCount">0</strong>
+                </span>
+                <span class="stat-item">
+                    ✅ Завершено: <strong id="completedCount">0</strong>
+                </span>
+                <span class="stat-item" id="remainingContainer">
+                    ⏳ Осталось: <strong id="remainingCount">0</strong>
+                </span>
+            </div>
+
+            <!-- Todo List -->
+            <ul id="todoList" class="todo-list" role="list" aria-label="Список задач">
+                <!-- Задачи будут добавляться здесь динамически -->
+            </ul>
+
+            <!-- Empty State -->
+            <div class="empty-state" id="emptyState" role="status">
+                <p class="empty-icon">📭</p>
+                <p class="empty-title">Нет задач</p>
+                <p class="empty-text">Добавьте первую задачу, чтобы начать организацию работы!</p>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="actions">
+                <button id="exportBtn" class="export-btn" aria-label="Экспортировать данные" title="Скачать как JSON">
+                    📥 Экспорт
+                </button>
+                <button id="importBtn" class="import-btn" aria-label="Импортировать данные" title="Загрузить из JSON">
+                    📤 Импорт
+                </button>
+                <input type="file" id="importFile" accept=".json" style="display: none;">
+                <button id="clearBtn" class="clear-btn" aria-label="Очистить завершённые задачи">
+                    🗑️ Очистить завершённые
+                </button>
+                <button id="deleteAllBtn" class="delete-all-btn" aria-label="Удалить все задачи">
+                    ⚠️ Удалить все
+                </button>
+            </div>
+
+            <!-- Footer -->
+            <footer class="footer">
+                <p>🏥 MedAI v1.0.0 | <a href="#info" onclick="showInfo()">Справка</a> | Все данные сохраняются локально</p>
+            </footer>
+        </div>
+    </div>
+
+    <!-- Info Modal -->
+    <div id="infoModal" class="modal hidden">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeInfo()">✕</button>
+            <h2>ℹ️ Справка</h2>
+            <div class="modal-body">
+                <h3>🎯 Основные функции:</h3>
+                <ul>
+                    <li>✅ Добавление и удаление медицинских задач</li>
+                    <li>✅ Фильтрация по статусам (все, активные, завершённые)</li>
+                    <li>✅ Отслеживание прогресса с статистикой</li>
+                    <li>✅ Автоматическое сохранение в браузере</li>
+                    <li>✅ Экспорт/импорт данных в JSON</li>
+                </ul>
+
+                <h3>⌨️ Горячие клавиши:</h3>
+                <ul>
+                    <li><strong>Enter</strong> - добавить новую задачу</li>
+                    <li><strong>Ctrl/Cmd + E</strong> - экспортировать данные</li>
+                </ul>
+
+                <h3>📱 Совместимость:</h3>
+                <ul>
+                    <li>✅ Работает на всех современных браузерах</li>
+                    <li>✅ Адаптивный дизайн для мобильных и планшетов</li>
+                    <li>✅ Нет интернета - нет проблем (все локально)</li>
+                </ul>
+
+                <h3>🔒 Безопасность:</h3>
+                <ul>
+                    <li>✅ Защита от XSS атак</li>
+                    <li>✅ Локальное хранилище (не передаётся на серверы)</li>
+                    <li>✅ Валидация входных данных</li>
+                </ul>
+            </div>
+            <button class="btn-primary" onclick="closeInfo()">Закрыть</button>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="app.js"></script>
+    <script>
+        function showInfo() {
+            document.getElementById('infoModal').classList.remove('hidden');
+        }
+        function closeInfo() {
+            document.getElementById('infoModal').classList.add('hidden');
+        }
+    </script>
+</body>
+</html>
