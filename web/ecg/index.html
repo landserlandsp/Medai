@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Исследовательский помощник для предварительной структуризации фотографии ЭКГ">
+  <title>MedAI ECG Assistant</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app-shell">
+    <header class="page-header">
+      <p class="eyebrow">MedAI · исследовательский прототип</p>
+      <h1>Предварительная оценка ЭКГ</h1>
+      <p class="subtitle">Загрузите фотографию для технической проверки и подготовки структурированного отчёта.</p>
+    </header>
+
+    <section class="safety-notice" aria-labelledby="safety-title">
+      <h2 id="safety-title">Важно</h2>
+      <p>Это не диагноз и не замена медицинскому специалисту. На этом этапе изображение не отправляется на сервер и медицинская интерпретация не выполняется.</p>
+    </section>
+
+    <section class="workspace" aria-label="Рабочая область анализа ЭКГ">
+      <div class="panel">
+        <h2>1. Изображение</h2>
+        <label class="upload-area" for="ecg-file">
+          <span class="upload-title">Выбрать фотографию ЭКГ</span>
+          <span class="upload-hint">JPG, PNG · до 10 МБ</span>
+          <input id="ecg-file" type="file" accept="image/jpeg,image/png" hidden>
+        </label>
+        <div id="image-status" class="status" role="status" aria-live="polite">Изображение не выбрано</div>
+        <img id="ecg-preview" class="preview hidden" alt="Предпросмотр выбранной фотографии ЭКГ">
+        <button id="clear-image" class="button secondary" type="button" disabled>Очистить</button>
+      </div>
+
+      <div class="panel report-panel">
+        <h2>2. Предварительный отчёт</h2>
+        <div id="report" class="report" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <footer class="footer">Результаты прототипа нельзя использовать как самостоятельное основание для медицинского решения.</footer>
+  </main>
+  <script type="module" src="app.js"></script>
+</body>
+</html>

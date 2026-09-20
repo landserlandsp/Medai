@@ -1,0 +1,37 @@
+:root {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #172033;
+  background: #f4f7fb;
+  line-height: 1.5;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; }
+.app-shell { width: min(1100px, calc(100% - 32px)); margin: 0 auto; padding: 32px 0; }
+.page-header { margin-bottom: 24px; }
+.eyebrow { color: #2563eb; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; font-size: .78rem; }
+h1, h2 { margin-top: 0; }
+h1 { margin-bottom: 8px; font-size: clamp(1.8rem, 4vw, 2.8rem); }
+.subtitle { color: #536174; max-width: 720px; }
+.safety-notice { border-left: 4px solid #d97706; background: #fff7ed; padding: 16px 20px; margin-bottom: 24px; }
+.safety-notice h2 { font-size: 1rem; margin-bottom: 4px; }
+.safety-notice p { margin: 0; }
+.workspace { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+.panel { background: #fff; border: 1px solid #dbe3ee; border-radius: 14px; padding: 22px; box-shadow: 0 8px 24px rgb(30 64 175 / 6%); }
+.upload-area { min-height: 170px; border: 2px dashed #9db2cf; border-radius: 12px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; cursor: pointer; padding: 20px; }
+.upload-area:hover, .upload-area:focus-within { border-color: #2563eb; background: #f8fbff; }
+.upload-title { font-weight: 700; }
+.upload-hint, .status, .footer { color: #64748b; font-size: .9rem; }
+.upload-hint { margin-top: 4px; }
+.status { margin: 14px 0; }
+.preview { display: block; width: 100%; max-height: 360px; object-fit: contain; border-radius: 8px; background: #eef2f7; margin-bottom: 14px; }
+.hidden { display: none !important; }
+.button { border: 0; border-radius: 8px; padding: 10px 16px; font: inherit; cursor: pointer; }
+.button.secondary { background: #e8eef7; color: #243b5a; }
+.button:disabled { opacity: .5; cursor: not-allowed; }
+.report { display: grid; gap: 10px; }
+.report-row { display: flex; justify-content: space-between; gap: 16px; border-bottom: 1px solid #edf1f6; padding: 9px 0; }
+.report-row span:first-child { color: #536174; }
+.report-warning { background: #f8fafc; border-radius: 8px; padding: 14px; color: #475569; }
+.footer { margin-top: 22px; text-align: center; }
+@media (max-width: 760px) { .workspace { grid-template-columns: 1fr; } .app-shell { width: min(100% - 20px, 1100px); padding-top: 20px; } }
