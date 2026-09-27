@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "com.medai.app-mergeDebugResources-30:/layout/fragment_ecg.xml",
+        "source": "com.medai.app-main-33:/layout/fragment_ecg.xml"
+    },
+    {
+        "merged": "com.medai.app-mergeDebugResources-30:/layout/fragment_patients.xml",
+        "source": "com.medai.app-main-33:/layout/fragment_patients.xml"
+    },
+    {
+        "merged": "com.medai.app-mergeDebugResources-30:/layout/activity_main.xml",
+        "source": "com.medai.app-main-33:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.medai.app-mergeDebugResources-30:/layout/fragment_dashboard.xml",
+        "source": "com.medai.app-main-33:/layout/fragment_dashboard.xml"
+    }
+]

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">МедАИ</string>
+    <string name="app_tagline">Прототип медицинского рабочего процесса</string>
+    <string name="dashboard_title">Главная</string>
+    <string name="ecg_title">ЭКГ</string>
+    <string name="nav_dashboard">Главная</string>
+    <string name="nav_ecg">ЭКГ</string>
+    <string name="nav_patients">Пациенты</string>
+    <string name="open_ecg">Открыть ассистента ECG</string>
+    <string name="patients_title">Пациенты</string>
+    <string name="safety_notice">Это исследовательский прототип. Результаты не являются диагнозом.</string>
+    <string name="status_ready">Проверка безопасности и каркас интерфейса готовы</string>
+</resources>
