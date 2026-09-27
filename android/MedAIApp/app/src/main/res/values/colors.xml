@@ -1,0 +1,9 @@
+<resources>
+    <color name="primary_medai">#1D4ED8</color>
+    <color name="primary_medai_dark">#163EA8</color>
+    <color name="background_medai">#F4F7FB</color>
+    <color name="surface_medai">#FFFFFF</color>
+    <color name="text_medai">#11213D</color>
+    <color name="muted_medai">#5B6B82</color>
+    <color name="warning_medai">#F59E0B</color>
+</resources>

@@ -1,0 +1,54 @@
+[
+    {
+        "merged": "com.medai.app-debug-31:/menu_bottom_nav_menu.xml.flat",
+        "source": "com.medai.app-main-33:/menu/bottom_nav_menu.xml"
+    },
+    {
+        "merged": "/home/vscode/.gradle/daemon/9.7.1/com.medai.app-debug-31:/drawable_ic_launcher_background.xml.flat",
+        "source": "/home/vscode/.gradle/daemon/9.7.1/com.medai.app-main-33:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.medai.app-debug-31:/drawable_ic_home.xml.flat",
+        "source": "com.medai.app-main-33:/drawable/ic_home.xml"
+    },
+    {
+        "merged": "/home/vscode/.gradle/daemon/9.7.1/com.medai.app-debug-31:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/home/vscode/.gradle/daemon/9.7.1/com.medai.app-main-33:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "/home/vscode/.gradle/daemon/9.7.1/com.medai.app-debug-31:/layout_activity_main.xml.flat",
+        "source": "/home/vscode/.gradle/daemon/9.7.1/com.medai.app-main-33:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.medai.app-debug-31:/drawable_ic_patients.xml.flat",
+        "source": "com.medai.app-main-33:/drawable/ic_patients.xml"
+    },
+    {
+        "merged": "/home/vscode/.gradle/daemon/9.7.1/com.medai.app-debug-31:/menu_bottom_nav_menu.xml.flat",
+        "source": "/home/vscode/.gradle/daemon/9.7.1/com.medai.app-main-33:/menu/bottom_nav_menu.xml"
+    },
+    {
+        "merged": "com.medai.app-debug-31:/drawable_ic_ecg.xml.flat",
+        "source": "com.medai.app-main-33:/drawable/ic_ecg.xml"
+    },
+    {
+        "merged": "/home/vscode/.gradle/daemon/9.7.1/com.medai.app-debug-31:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "/home/vscode/.gradle/daemon/9.7.1/com.medai.app-main-33:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "/home/vscode/.gradle/daemon/9.7.1/com.medai.app-debug-31:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/home/vscode/.gradle/daemon/9.7.1/com.medai.app-main-33:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "/home/vscode/.gradle/daemon/9.7.1/com.medai.app-debug-31:/layout_fragment_ecg.xml.flat",
+        "source": "/home/vscode/.gradle/daemon/9.7.1/com.medai.app-main-33:/layout/fragment_ecg.xml"
+    },
+    {
+        "merged": "/home/vscode/.gradle/daemon/9.7.1/com.medai.app-debug-31:/layout_fragment_patients.xml.flat",
+        "source": "/home/vscode/.gradle/daemon/9.7.1/com.medai.app-main-33:/layout/fragment_patients.xml"
+    },
+    {
+        "merged": "/home/vscode/.gradle/daemon/9.7.1/com.medai.app-debug-31:/layout_fragment_dashboard.xml.flat",
+        "source": "/home/vscode/.gradle/daemon/9.7.1/com.medai.app-main-33:/layout/fragment_dashboard.xml"
+    }
+]

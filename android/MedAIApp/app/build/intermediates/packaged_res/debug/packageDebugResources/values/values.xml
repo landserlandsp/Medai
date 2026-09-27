@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background_medai">#F4F7FB</color>
+    <color name="muted_medai">#5B6B82</color>
+    <color name="primary_medai">#1D4ED8</color>
+    <color name="primary_medai_dark">#163EA8</color>
+    <color name="surface_medai">#FFFFFF</color>
+    <color name="text_medai">#11213D</color>
+    <color name="warning_medai">#F59E0B</color>
+    <string name="app_name">МедАИ</string>
+    <string name="app_tagline">Прототип медицинского рабочего процесса</string>
+    <string name="dashboard_title">Главная</string>
+    <string name="ecg_title">ЭКГ</string>
+    <string name="nav_dashboard">Главная</string>
+    <string name="nav_ecg">ЭКГ</string>
+    <string name="nav_patients">Пациенты</string>
+    <string name="open_ecg">Открыть ассистента ECG</string>
+    <string name="patients_title">Пациенты</string>
+    <string name="safety_notice">Это исследовательский прототип. Результаты не являются диагнозом.</string>
+    <string name="status_ready">Проверка безопасности и каркас интерфейса готовы</string>
+    <style name="Theme.MedAI" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primary_medai</item>
+        <item name="colorPrimaryVariant">@color/primary_medai_dark</item>
+        <item name="colorOnPrimary">@android:color/white</item>
+        <item name="android:statusBarColor">@color/primary_medai_dark</item>
+        <item name="android:windowBackground">@color/background_medai</item>
+    </style>
+</resources>
